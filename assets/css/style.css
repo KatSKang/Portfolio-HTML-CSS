@@ -1,59 +1,129 @@
 :root {
-    --header-col: rgb(131, 92, 146);
+    --header-col: rgb(75, 38, 90);
 }
 
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 110%;
     letter-spacing: 2px;
 }
 
+/* Header */
 header {
+    display: inline-flex;
+    width: 100%;
     background-color: var(--header-col);
+    font-weight: lighter;
+    color:azure;
 }
 
-/* Header */
-header h1 {
+.header-title h1 {
     display: inline-flex;
     font-weight: lighter;
     font-size: 4rem;
-    color:azure;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
-/* nav */
-nav {   
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+.header-title p {
+    position: relative;
+    margin: -2.5rem 0 1.5rem 1.5rem;
 }
 
-nav ul li {
-    display:inline-flex;
+/* nav bar */
+.nav-default {   
+    position: relative;
+    margin: -180PX 20px;
+    float:right;
+}
+
+.nav-bar li {
+    display:inline;
     flex:wrap;
     list-style: none;
-    margin-right: 20px;
-    font-size: larger;
+    margin-right: 1rem;
 }
 
-.link {
+.nav-link {
     color:white;
 }
 
-/* Main content */
-.info {
-    display:flex;
+.nav-link:hover {
+    color:darkturquoise;
 }
 
-.content-title {
-    float:left;
-    margin-right: 5rem;
-    padding:9rem;
-    font-size:3rem;
+/* Main content */
+main {
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.info-title {
+    color: var(--header-col);
     font-weight:lighter;
+    width: 100%;
+    border-bottom: grey solid 1px;
+}
+
+.info-title h2 {
+    margin-bottom: -0.25px;
 }
 
 .info-box {
-    margin: 20px 90px 20px 5px;
-    padding: 50px;
+    flex: 1 0 100%;
+}
+
+#about-text {
+    padding: 10px;
+}
+
+.profile-img {
+    margin: 10px 10px 10px 0px;
+    max-height: 300px;
+    max-width: 300px;
+    float:left;
+    border-radius: 50px;
+}
+
+/* cards */
+.card-column { /* container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+}
+
+.card-works { 
+    flex: 0 1 100%;
+    text-align: center;
+    border-radius: 5px; 
+    padding: 5px;
+    outline: grey solid 1px;
+    color: var(--header-col);
+}
+
+.card-img {
+    max-width: 350px;
+    max-height: 350px; 
+    filter:grayscale(80%);
+}
+
+.card-img:hover{
+    filter:grayscale(0%);
+}
+
+.card-works:hover {
+    transform: scale(105%);
+}
+
+.card-header-link {
+    text-decoration: none;
+    color: var(--header-col);
+}
+
+.contact-links {
+    list
 }

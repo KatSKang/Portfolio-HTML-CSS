@@ -11,54 +11,89 @@
 
 <body>
     <header> 
-        <h1> Welcome to my Portfolio page!</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me" class="link">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-works" class="link">My Works</a>
-                </li>
-                <li>
-                    <a href="#contact-me" class="link">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header-title">
+            <h1>Kathy Kang</h1>
+            <p>Portfolio sample</p>
+        </div>
     </header>
-
-    <article>
-
-    </article>
+    <nav class="nav-default">
+        <ul class="nav-bar">
+            <li><a href="#about-me" class="nav-link">About Me</a></li>
+            <li><a href="#my-works" class="nav-link">My Works</a></li>
+            <li><a href="#contact-me" class="nav-link">Contact Me</a></li>
+        </ul>
+    </nav>
 
     <main>
         <div>
             <section class="info">
-                <div class="content-title" id="about-me">
+                <div class="info-title">
                     <h2>About Me</h2>
                 </div>
                 <div class="info-box">
-                    <p> Hello and welcome to my portfolio page! My name is Kathy Kang. I'm currently enrolled in Georgia Tech's Coding Bootcamp in hopes of becoming a web developer. I've always had an interest in computers and technology, but never thought of pursuing it as a career until recently. I'm currently working as an office manager in a small appliance repair company. I enjoy playing video games (on PC), spending time with friends and family, and playing with my pets in my free time. I also love watching horror movies! </p>
+                    <img src="./assets/images/profile2.jpg" alt="Profile Picture" class="profile-img">
+                    <p id="about-text"> Hello and welcome to my portfolio page! My name is Kathy Kang. I'm currently enrolled in Georgia Tech's Coding Bootcamp in hopes of becoming a web developer. I've always had an interest in computers and technology, but never thought of pursuing it as a career until recently. I'm currently working as an office manager in a small appliance repair company. I enjoy playing video games (on PC), spending time with friends and family, and playing with my pets in my free time. I also love watching horror movies! </p>
+                    
                 </div>
             </section>
 
-            <section class="info" id="my-works">
-                <div class="content-title">
+            <section class="info">
+                <div class="info-title">
                     <h2>My Works</h2>
                 </div>
                 <div class="info-box">
-                    <p> Here are my current works, with more to come.</p>
-                    <section class="info-cards"
+                    <p> Here are my current works with more to come. Click on the name to view the project.</p>
+                </div>
+                <div class="card-column"> 
+                    <figure class="card-works"> <!-- flex cards for works/projects-->
+                        <h2 class="card-header"><a href="https://katskang.github.io/Horiseon-Code-Refactor/" target="_blank" class="card-header-link">Code Refactor </a></h2>
+                        <div class="card-body">
+                            <img src="./assets/images/horiseon.JPG" alt="Horiseon Code Refactor image" class="card-img">
+                        </div>
+                    </figure>
+                </div>
+                <div class="card-column"> 
+                    <figure class="card-works"> 
+                        <h2 class="card-header">Coming soon!</h2>
+                        <div class="card-body">
+                            <img src="./assets/images/placeholder.JPG" alt="placeholder image" class="card-img">
+                        </div>
+                    </figure>
+                </div>
+                <div class="card-column"> 
+                    <figure class="card-works"> 
+                        <h2 class="card-header">Coming soon!</h2>
+                        <div class="card-body">
+                            <img src="./assets/images/placeholder.JPG" alt="Horiseon Code Refactor image" class="card-img">
+                        </div>
+                    </figure>
                 </div>
             </section>
-        </div>
+            
+            <section class="info">
+                <div class="info-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="info-box">
+                    <p>Feel free to contact me and visit my other pages below.</p>
+                    <ul class="contact-links">
+                        <li>Email: katsomsanith@gmail.com</li>
+                        <li><a href="https://github.com/KatSKang" class="link">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/kathy-kang-55560998/" class="link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </section>
 
+
+        </div>
 
     </main>
 
 
 
-    <footer></footer>
+    <footer>
+        <h6>Thank you for visiting!</h6>
+    </footer>
 
 </body>
 
