@@ -60,7 +60,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
+    margin-bottom: 20px;
+} 
 
 .info-title {
     color: var(--header-col);
@@ -70,10 +71,7 @@ main {
 
 .info-title h2 {
     margin-bottom: -0.25px;
-}
-
-.info-box {
-    flex: 1 1 100%;
+    font-size: 2rem;
 }
 
 #about-text {
@@ -89,6 +87,17 @@ main {
 }
 
 /* cards */
+
+.main-column { /* main work container */
+    flex:1 0 100%;
+    position: relative;
+}
+
+.main-body img {
+    max-width: 600px;
+    max-height: 600px;
+}
+
 .card-column { /* container */
     display: flex;
     position: relative;
@@ -96,14 +105,13 @@ main {
     justify-content: flex-start;
 }
 
-.card-works { 
+.card-works {
+    flex: 1 0 50%;
     text-align: center;
     border-radius: 5px; 
     padding: 5px;
-    outline: grey solid 1px;
+    outline: var(--border-col) solid 1px;
     color: var(--header-col);
-    max-width: fit-content;
-    max-height: 400px;
 }
 
 .card-body img{
@@ -124,11 +132,11 @@ main {
 .card-works:hover {
     transform: scale(102%);
     transition: 0.5s ease;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px violet;
 }
 
 .card-works:hover img { /* sourced from W3 schools */
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .card-works:hover .middle { /* sourced from W3 schools */
@@ -143,5 +151,22 @@ main {
 
 footer{
     text-align: center;
-    color: var(--header-col);
+    color: var(--light-text);
+    background: var(--header-col);
+    padding: 10px;
 }
+
+/* media query */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .main-column {
+        flex:0 2 50%;
+    }
+    .main-body img {
+        max-width: 350px;
+        max-height: 350px;
+    }
+}
+
