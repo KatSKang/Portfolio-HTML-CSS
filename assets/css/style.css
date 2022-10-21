@@ -9,6 +9,12 @@
     letter-spacing: 1.5px;
 }
 
+body {
+    background: #eee7ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #eee7ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #eee7ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+}
+
 /* Header */
 header {
     display: inline-flex;
@@ -77,6 +83,7 @@ main {
 
 .about {
     padding: 20px;
+    
 }
 
 .profile-img {
@@ -84,7 +91,7 @@ main {
     max-height: 300px;
     max-width: 300px;
     float:left;
-    border-radius: 40px;
+    border-radius: 50%;
 }
 
 /* cards */
@@ -113,6 +120,7 @@ main {
     padding: 5px;
     outline: var(--border-col) solid 1px;
     color: var(--header-col);
+    background-color: white;
 }
 
 .card-body img{
